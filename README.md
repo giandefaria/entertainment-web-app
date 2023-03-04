@@ -1,3 +1,5 @@
+Data de início - 04/03/2023
+
 # Frontend Mentor - Entertainment web app
 
 ![Design preview for the Entertainment web app coding challenge](./preview.jpg)
