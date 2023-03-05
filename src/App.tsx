@@ -9,8 +9,6 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element ={ <Main />} />
-
-
       </Routes>
     </div>
   );
