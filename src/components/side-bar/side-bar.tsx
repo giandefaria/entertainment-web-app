@@ -6,7 +6,13 @@ export default function SideBar () {
 
     return (
         <aside>
-            <img src={logo} alt="logo" className="side-bar-logo"/> 
+            <section className="side-bar-icons-container">
+                <img src={logo} alt="logo" className="side-bar-logo"/>
+                <div className="side-bar-icons">
+
+                </div>
+            </section>
+             
             <h1>Barra Lateral</h1>
         </aside>    
     )
