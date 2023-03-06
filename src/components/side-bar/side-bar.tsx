@@ -1,3 +1,5 @@
+import "./side-bar.css"
+
 export default function SideBar () {
 
     return (
