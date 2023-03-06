@@ -1,9 +1,12 @@
 import "./side-bar.css"
+import logo from "../../assets/logo.svg"
+
 
 export default function SideBar () {
 
     return (
-        <aside> 
+        <aside>
+            <img src={logo} alt="logo" /> 
             <h1>Barra Lateral</h1>
         </aside>    
     )
