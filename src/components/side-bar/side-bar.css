@@ -30,4 +30,9 @@ aside, .side-bar-icons-container, .side-bar-icons {
     gap: 40px;
 }
 
+.side-bar-avatar {
+    width: 40px;
+    height: 40px;
+}
+
 
