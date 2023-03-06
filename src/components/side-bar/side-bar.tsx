@@ -2,6 +2,7 @@ import "./side-bar.css"
 import logo from "../../assets/logo.svg"
 import home from "../../assets/icon-nav-home.svg"
 import movie from "../../assets/icon-nav-movies.svg"
+import tvSeries from "../../assets/icon-nav-tv-series.svg"
 
 
 export default function SideBar () {
@@ -13,7 +14,7 @@ export default function SideBar () {
                 <div className="side-bar-icons">
                     <img src={home} alt="home-icon" />
                     <img src={movie} alt="movie-icon" />
-                    <img src="" alt="" />
+                    <img src={tvSeries} alt="tv-series-icon" />
                     <img src="" alt="" />
 
                 </div>
