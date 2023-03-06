@@ -22,7 +22,7 @@ export default function SideBar () {
                 </div>
             </section>
              
-            <img src={avatar} alt="avatar" />
+            <img src={avatar} alt="avatar" className="side-bar-avatar"/>
         </aside>    
     )
 
