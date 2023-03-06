@@ -12,6 +12,9 @@ export default function SideBar () {
                 <img src={logo} alt="logo" className="side-bar-logo"/>
                 <div className="side-bar-icons">
                     <img src={home} alt="home-icon" />
+                    <img src={movie} alt="movie-icon" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
 
                 </div>
             </section>
