@@ -6,7 +6,7 @@ export default function SideBar () {
 
     return (
         <aside>
-            <img src={logo} alt="logo" /> 
+            <img src={logo} alt="logo" className="side-bar-logo"/> 
             <h1>Barra Lateral</h1>
         </aside>    
     )
