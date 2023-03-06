@@ -4,6 +4,7 @@ import home from "../../assets/icon-nav-home.svg"
 import movie from "../../assets/icon-nav-movies.svg"
 import tvSeries from "../../assets/icon-nav-tv-series.svg"
 import bookmark from "../../assets/icon-nav-bookmark.svg"
+import avatar from "../../assets/image-avatar.png"
 
 
 export default function SideBar () {
@@ -21,7 +22,7 @@ export default function SideBar () {
                 </div>
             </section>
              
-            <h1>Barra Lateral</h1>
+            <img src={avatar} alt="avatar" />
         </aside>    
     )
 
