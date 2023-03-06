@@ -8,17 +8,25 @@ aside {
     top: 32px;
 }
 
-.side-bar-icons-container {
+.side-bar-icons-container, .side-bar-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.side-bar-icons-container {
     gap: 75px;
 }
+
 
 .side-bar-logo {
     text-align: center;
     padding-top: 35px;
 
+}
+
+.side-bar-icons {
+    gap: 40px;
 }
 
 
