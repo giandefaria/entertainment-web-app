@@ -1,6 +1,5 @@
 .App {
   /*text-align: center;*/
-  margin-left: 32px;
   display: flex;
   gap: 36px;
 }
