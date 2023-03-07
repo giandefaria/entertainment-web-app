@@ -1,4 +1,5 @@
 import icon from "../../assets/icon-search.svg"
+import "./main.css"
 
 export default function Main () {
 
