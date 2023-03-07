@@ -1,3 +1,11 @@
+:root {
+    --font-family: 'Outfit', sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
 html {
     width: 1440px;
     background: #10141E;
@@ -5,3 +13,4 @@ html {
     padding-top: 32px;
     padding-bottom: 52px;
 }
+
