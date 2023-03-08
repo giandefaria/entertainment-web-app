@@ -11,6 +11,9 @@ export default function Main () {
             </div>
 
             <h1>Trending</h1>
+            <div data-trending>
+
+            </div>
 
             <div>
                 
