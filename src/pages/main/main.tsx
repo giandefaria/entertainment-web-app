@@ -9,8 +9,11 @@ export default function Main () {
             <div className="input-container">
                 <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input"/>
             </div>
+
+            <h1>Trending</h1>
+
             <div>
-                <h1>página principal</h1>
+                
             </div>
         </main>
 
