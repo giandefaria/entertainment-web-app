@@ -1,8 +1,10 @@
 import icon from "../../assets/icon-search.svg"
 import "./main.css"
+import { conectar } from "../../functions/api-connect"
 
 export default function Main () {
 
+    conectar()
 
     return (
         <main>
