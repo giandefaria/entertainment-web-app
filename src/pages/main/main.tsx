@@ -11,13 +11,14 @@ export default function Main () {
             </div>
 
             <h1>Trending</h1>
-            <div data-trending>
+            <ul data-trending-container>
 
-            </div>
+            </ul>
 
-            <div>
+            <h1>Recommended for you</h1>
+            <ul data-recommended-container>
                 
-            </div>
+            </ul>
         </main>
 
     )
