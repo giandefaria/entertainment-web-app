@@ -14,3 +14,9 @@
 .thumb-container {
     position: relative;
 }
+
+.bookmarked-icon {
+    position: absolute;
+    right: 30px;
+    top: 36px;
+}
