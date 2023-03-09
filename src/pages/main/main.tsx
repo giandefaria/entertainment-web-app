@@ -1,6 +1,8 @@
 import icon from "../../assets/icon-search.svg"
 import "./main.css"
 import { conectar } from "../../functions/api-connect"
+import thumb from "../../assets/thumbnails/the-great-lands/regular/small.jpg"
+import bookempy from "../../assets/icon-bookmark-empty.svg"
 
 export default function Main () {
 
@@ -19,6 +21,11 @@ export default function Main () {
 
             <h1>Recommended for you</h1>
             <ul data-recommended-container>
+                <li>
+                   <div className="thumb-container">
+                        <img src={thumb} alt="" /> <img src={bookempy} alt="bookmarked" />
+                   </div> 
+                </li>
                 
             </ul>
         </main>
