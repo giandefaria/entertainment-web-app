@@ -11,6 +11,10 @@
     color: #FFFFFF;
 }
 
+.movies-container{
+    list-style: none;
+}
+
 .thumb-container {
     position: relative;
 }

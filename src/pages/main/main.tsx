@@ -21,7 +21,7 @@ export default function Main () {
 
             <h1>Recommended for you</h1>
             <ul data-recommended-container>
-                <li>
+                <li className="movies-container">
                    <div className="thumb-container">
                         <img src={thumb} alt="thumb" /> <img src={bookempy} alt="bookmarked-icon" className="bookmarked-icon" />
                    </div> 
