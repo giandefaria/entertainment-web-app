@@ -7,3 +7,5 @@ export async function conectar() {
 
 console.log('ok')
 conectar()
+
+//criar um generics para o retorno da api
