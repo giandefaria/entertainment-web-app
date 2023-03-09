@@ -3,6 +3,7 @@ import "./main.css"
 import { conectar } from "../../functions/api-connect"
 import thumb from "../../assets/thumbnails/the-great-lands/regular/small.jpg"
 import bookempy from "../../assets/icon-bookmark-empty.svg"
+import iconMovie from "../../assets/icon-category-movie.svg"
 
 export default function Main () {
 
@@ -24,6 +25,10 @@ export default function Main () {
                 <li className="movies-container">
                    <div className="thumb-container">
                         <img src={thumb} alt="thumb" /> <img src={bookempy} alt="bookmarked-icon" className="bookmarked-icon" />
+                   </div>
+
+                   <div className="category">
+                     <h6>2019</h6> <p>.</p> <h6><img src={iconMovie} alt="icom-movie" />Movie</h6> <p>.</p> <h6>PG</h6>
                    </div> 
                 </li>
                 
