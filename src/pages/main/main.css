@@ -11,6 +11,10 @@
     color: #FFFFFF;
 }
 
+ul {
+    padding: 0;
+}
+
 .movies-container{
     list-style: none;
 }
