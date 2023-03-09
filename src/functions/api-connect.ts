@@ -3,6 +3,9 @@ export async function conectar() {
     console.log(resposta);
     const respostaConvertida = await resposta.json(); //converto a resposta em string em um objeto json
     console.log(respostaConvertida);
+    respostaConvertida.forEach( (e : any) => {
+        console.log(e)
+    })
 }
 
 console.log('ok')
