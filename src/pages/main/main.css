@@ -10,3 +10,7 @@
     font-size: 24px;
     color: #FFFFFF;
 }
+
+.thumb-container {
+    position: relative;
+}
