@@ -29,7 +29,8 @@ export default function Main () {
 
                    <div className="category">
                      <h6>2019</h6> <div className="list-style display-center"><img src={iconMovie} alt="icon-movie" /> <h6> Movie</h6></div> <h6 className="list-style">PG</h6>
-                   </div> 
+                   </div>
+                   <h4>The Great Lands</h4> 
                 </li>
                 
             </ul>
