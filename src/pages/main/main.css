@@ -30,3 +30,18 @@ ul {
     right: 30px;
     top: 36px;
 }
+
+.category {
+    display: flex;
+    gap: 20px;
+
+}
+.category h6 {
+    margin: 0;
+}
+
+.list-style {
+    display: list-item;
+    list-style: outside;
+}
+

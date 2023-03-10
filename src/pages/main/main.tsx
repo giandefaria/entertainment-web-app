@@ -28,7 +28,7 @@ export default function Main () {
                    </div>
 
                    <div className="category">
-                     <h6>2019</h6> <p>.</p> <h6><img src={iconMovie} alt="icom-movie" />Movie</h6> <p>.</p> <h6>PG</h6>
+                     <h6>2019</h6> <h6 className="list-style"><img src={iconMovie} alt="icon-movie" />Movie</h6> <h6 className="list-style">PG</h6>
                    </div> 
                 </li>
                 
