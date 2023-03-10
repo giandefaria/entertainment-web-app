@@ -33,6 +33,7 @@ ul {
 
 .category {
     display: flex;
+    align-items: center;
     gap: 20px;
 
 }
@@ -40,8 +41,13 @@ ul {
     margin: 0;
 }
 
-.list-style {
-    display: list-item;
-    list-style: outside;
+.display-center {
+    display: flex;
+    align-items: center;
+}
+
+.list-style::before {
+    content: '•';
+
 }
 
