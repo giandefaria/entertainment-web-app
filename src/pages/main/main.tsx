@@ -22,7 +22,7 @@ export default function Main () {
 
             <h1>Recommended for you</h1>
             <ul data-recommended-container>
-                <li className="movies-container">
+            {/*    <li className="movies-container">
                    <div className="thumb-container">
                         <img src={thumb} alt="thumb" /> <div className="bookmarked-icon"><img src={bookempy} alt="bookmarked-icon"/></div>
                    </div>
@@ -32,7 +32,7 @@ export default function Main () {
                    </div>
                    <h4>The Great Lands</h4> 
                 </li>
-                
+            */}    
             </ul>
         </main>
 
