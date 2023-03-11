@@ -12,6 +12,8 @@ export async function conectar() {
             console.log(e)
         }
     })
+
+    return respostaConvertida;
 }
 
 

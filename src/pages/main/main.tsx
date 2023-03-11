@@ -6,11 +6,12 @@ import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
 import MovieList from "../../components/movies-container/movies-list"
 import { useEffect } from "react"
+import addMovies from "../../functions/add-movies"
 
 export default function Main () {
 
     useEffect(() => {
-        
+        addMovies();
 
 
     }, [])
