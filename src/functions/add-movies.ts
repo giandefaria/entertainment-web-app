@@ -11,13 +11,10 @@ export default async function addMovies (elements: NodeListOf<HTMLElement>) {
         console.log(htmlElement.dataset.ul);
 
         if (htmlElement.dataset.ul == 'notTreding') {
-            htmlElement.innerHTML= ""
-            notTrendingMovie(obj, htmlElement);
-            
-                        
+            notTrendingMovie(obj, htmlElement);                      
         }
 
-    } )
+    })
 
 }
 
@@ -27,14 +24,17 @@ function notTrendingMovie(obj: any, htmlElement: HTMLElement) {
         
     });
 
-    objFiltrado.forEach((element: any) => {
-        htmlElement.innerHTML = htmlElement.innerHTML + MovieList();
-    })
+    addMovieListInHtml(objFiltrado, htmlElement);
 
     console.log(objFiltrado);
-    //console.log(htmlElement)
-    //const lista = return MovieList();
-    //console.log(JSON.stringify(lista))
-    //htmlElement.appendChild(lista)
     
 }
+
+//função que adiciona a lista no html da página
+function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
+    htmlElement.innerHTML= "";
+    objFiltrado.forEach((element: any) => {
+        htmlElement.innerHTML = htmlElement.innerHTML + MovieList();
+    });
+}
+
