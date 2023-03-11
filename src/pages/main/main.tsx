@@ -11,6 +11,8 @@ import addMovies from "../../functions/add-movies"
 export default function Main () {
 
     useEffect(() => {
+        let ulContainers = document.querySelectorAll('[data-ul]');
+        console.log(ulContainers);
         addMovies();
 
 
@@ -23,12 +25,12 @@ export default function Main () {
             </div>
 
             <h1>Trending</h1>
-            <ul data-trending-container>
+            <ul data-trending-container data-ul="trending">
 
             </ul>
 
             <h1>Recommended for you</h1>
-            <ul data-recommended-container>
+            <ul data-recommended-container data-ul="notTreding">
                 
             {/*    <li className="movies-container">
                    <div className="thumb-container">

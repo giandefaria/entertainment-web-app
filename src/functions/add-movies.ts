@@ -4,6 +4,8 @@ import { conectar } from "./api-connect"; //função que conecta e retorna uma l
 
 export default async function addMovies () {
     const obj = await conectar(); //atribuo o retorno ao obj
-    console.log(obj)
+    console.log(obj);
+
+
 
 }
