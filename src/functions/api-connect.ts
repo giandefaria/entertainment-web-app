@@ -1,3 +1,5 @@
+//função que realiza a conexão com a api retornando o objeto
+
 import { moviesInformation } from "../interfaces/movies-information";
 
 export async function conectar() {

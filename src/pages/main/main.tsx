@@ -4,6 +4,7 @@ import { conectar } from "../../functions/api-connect"
 import thumb from "../../assets/thumbnails/the-great-lands/regular/small.jpg"
 import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
+import MovieList from "../../components/movies-container/movies-list"
 
 export default function Main () {
 
@@ -22,6 +23,7 @@ export default function Main () {
 
             <h1>Recommended for you</h1>
             <ul data-recommended-container>
+                
             {/*    <li className="movies-container">
                    <div className="thumb-container">
                         <img src={thumb} alt="thumb" /> <div className="bookmarked-icon"><img src={bookempy} alt="bookmarked-icon"/></div>

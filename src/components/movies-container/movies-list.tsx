@@ -1,3 +1,5 @@
+//componente que cria o container do filme
+
 import thumb from "../../assets/thumbnails/the-great-lands/regular/small.jpg"
 import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"

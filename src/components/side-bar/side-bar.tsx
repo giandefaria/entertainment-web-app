@@ -1,3 +1,5 @@
+//componente que monta a barra lateral do site
+
 import "./side-bar.css"
 import logo from "../../assets/logo.svg"
 import home from "../../assets/icon-nav-home.svg"
