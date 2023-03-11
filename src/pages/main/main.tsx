@@ -11,9 +11,9 @@ import addMovies from "../../functions/add-movies"
 export default function Main () {
 
     useEffect(() => {
-        let ulContainers : NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]');
+        let ulContainers : NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
         //console.log(ulContainers);
-        addMovies(ulContainers);
+        addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
 
 
     }, [])
