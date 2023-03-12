@@ -1,6 +1,7 @@
 //função que adicionará os filmes nos comentários
 
-import MovieList from "../components/movies-container/movies-list";
+import movieList from "../components/movies-container/movies-list";
+import { moviesInformation } from "../interfaces/movies-information";
 import { conectar } from "./api-connect"; //função que conecta e retorna uma lista da api
 
 export default async function addMovies (elements: NodeListOf<HTMLElement>) {
@@ -18,6 +19,7 @@ export default async function addMovies (elements: NodeListOf<HTMLElement>) {
 
 }
 
+//função que filtra os itens do objeto em que o trending seja falso
 function notTrendingMovie(obj: any, htmlElement: HTMLElement) {
     const objFiltrado = obj.filter((movie: any) => {
         return movie.isTrending == false;
@@ -26,15 +28,17 @@ function notTrendingMovie(obj: any, htmlElement: HTMLElement) {
 
     addMovieListInHtml(objFiltrado, htmlElement);
 
-    console.log(objFiltrado);
+    //console.log(objFiltrado);
     
 }
 
 //função que adiciona a lista no html da página
 function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
     htmlElement.innerHTML= "";
-    objFiltrado.forEach((element: any) => {
-        htmlElement.innerHTML = htmlElement.innerHTML + MovieList();
+    
+    objFiltrado.forEach((element: moviesInformation) => {
+        const thumbnail = element.thumbnail.regular.medium;
+        htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail);
     });
 }
 
