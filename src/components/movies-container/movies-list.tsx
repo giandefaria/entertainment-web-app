@@ -12,7 +12,7 @@ export default function movieList (teste:any) {
     return (`
         <li class="movies-container">
             <div class="thumb-container">
-                <img src='${require('../../assets/thumbnails/the-great-lands/regular/small.jpg')}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
+                <img src='${teste}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
             </div>
 
             <div class="category">
