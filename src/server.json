@@ -8,7 +8,7 @@
           "large": "./assets/thumbnails/beyond-earth/trending/large.jpg"
         },
         "regular": {
-          "small": "./assets/thumbnails/beyond-earth/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/beyond-earth/regular/small.jpg?token=GHSAT0AAAAAAB5MDR7AADH2PPMXAIQY5RTGZAODLDA",
           "medium": "./assets/thumbnails/beyond-earth/regular/medium.jpg",
           "large": "./assets/thumbnails/beyond-earth/regular/large.jpg"
         }
@@ -99,7 +99,7 @@
       "title": "The Great Lands",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/the-great-lands/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/the-great-lands/regular/small.jpg?token=GHSAT0AAAAAAB5MDR7AXG2RHSEBDOLQG5OMZAODJ4Q",
           "medium": "./assets/thumbnails/the-great-lands/regular/medium.jpg",
           "large": "./assets/thumbnails/the-great-lands/regular/large.jpg"
         }
