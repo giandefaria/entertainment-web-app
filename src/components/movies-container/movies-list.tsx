@@ -1,16 +1,18 @@
 //componente que cria o container do filme
 
-import thumb from "../../assets/thumbnails/the-great-lands/regular/small.jpg"
+//import thumb from "../../assets/thumbnails/the-great-lands/regular/small.jpg"
 import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
 
 
-export default function movieList (thumb:string) {
+export default function movieList (teste:any) {
+
+    
 
     return (`
         <li class="movies-container">
             <div class="thumb-container">
-                <img src='${thumb}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
+                <img src='${require('../../assets/thumbnails/the-great-lands/regular/small.jpg')}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
             </div>
 
             <div class="category">
