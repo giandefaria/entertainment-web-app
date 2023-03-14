@@ -8,7 +8,7 @@
           "large": "./assets/thumbnails/beyond-earth/trending/large.jpg"
         },
         "regular": {
-          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/beyond-earth/regular/small.jpg?token=GHSAT0AAAAAAB5MDR7AADH2PPMXAIQY5RTGZAODLDA",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/beyond-earth/regular/small.jpg",
           "medium": "./assets/thumbnails/beyond-earth/regular/medium.jpg",
           "large": "./assets/thumbnails/beyond-earth/regular/large.jpg"
         }
@@ -99,7 +99,7 @@
       "title": "The Great Lands",
       "thumbnail": {
         "regular": {
-          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/the-great-lands/regular/small.jpg?token=GHSAT0AAAAAAB5MDR7A2T7TTMTTOKP6NJBIZAPZ3RA",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/the-great-lands/regular/small.jpg",
           "medium": "./assets/thumbnails/the-great-lands/regular/medium.jpg",
           "large": "./assets/thumbnails/the-great-lands/regular/large.jpg"
         }
@@ -114,7 +114,7 @@
       "title": "The Diary",
       "thumbnail": {
         "regular": {
-          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/the-diary/regular/small.jpg?token=GHSAT0AAAAAAB5MDR7A2EODIS3YSI4QWC3GZAPZ2CA",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/the-diary/regular/small.jpg",
           "medium": "./assets/thumbnails/the-diary/regular/medium.jpg",
           "large": "./assets/thumbnails/the-diary/regular/large.jpg"
         }
