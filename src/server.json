@@ -129,7 +129,7 @@
       "title": "Earth’s Untouched",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/earths-untouched/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/earths-untouched/regular/small.jpg",
           "medium": "./assets/thumbnails/earths-untouched/regular/medium.jpg",
           "large": "./assets/thumbnails/earths-untouched/regular/large.jpg"
         }
@@ -144,7 +144,7 @@
       "title": "No Land Beyond",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/no-land-beyond/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/no-land-beyond/regular/small.jpg",
           "medium": "./assets/thumbnails/no-land-beyond/regular/medium.jpg",
           "large": "./assets/thumbnails/no-land-beyond/regular/large.jpg"
         }
@@ -159,7 +159,7 @@
       "title": "During the Hunt",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/during-the-hunt/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/during-the-hunt/regular/small.jpg",
           "medium": "./assets/thumbnails/during-the-hunt/regular/medium.jpg",
           "large": "./assets/thumbnails/during-the-hunt/regular/large.jpg"
         }
@@ -174,7 +174,7 @@
       "title": "Autosport the Series",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/autosport-the-series/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/autosport-the-series/regular/small.jpg",
           "medium": "./assets/thumbnails/autosport-the-series/regular/medium.jpg",
           "large": "./assets/thumbnails/autosport-the-series/regular/large.jpg"
         }
