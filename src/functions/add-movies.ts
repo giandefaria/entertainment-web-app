@@ -14,6 +14,9 @@ export default async function addMovies (elements: NodeListOf<HTMLElement>) {
         if (htmlElement.dataset.ul == 'notTreding') {
             notTrendingMovie(obj, htmlElement);                      
         }
+        /*if (htmlElement.dataset.ul == 'trending') {
+            //notTrendingMovie(obj, htmlElement);                      
+        }*/
 
     })
 
@@ -21,13 +24,14 @@ export default async function addMovies (elements: NodeListOf<HTMLElement>) {
 
 //função que filtra os itens do objeto em que o trending seja falso
 function notTrendingMovie(obj: any, htmlElement: HTMLElement) {
+    console.log(htmlElement.dataset.ul);
+    
     const objFiltrado = obj.filter((movie: any) => {
         return movie.isTrending == false;
         
     });
 
     addMovieListInHtml(objFiltrado, htmlElement);
-
     //console.log(objFiltrado);
     
 }
