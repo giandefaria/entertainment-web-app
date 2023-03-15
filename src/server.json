@@ -189,7 +189,7 @@
       "title": "Same Answer II",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/same-answer-2/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/same-answer-2/regular/small.jpg",
           "medium": "./assets/thumbnails/same-answer-2/regular/medium.jpg",
           "large": "./assets/thumbnails/same-answer-2/regular/large.jpg"
         }
@@ -204,7 +204,7 @@
       "title": "Below Echo",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/below-echo/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/below-echo/regular/small.jpg",
           "medium": "./assets/thumbnails/below-echo/regular/medium.jpg",
           "large": "./assets/thumbnails/below-echo/regular/large.jpg"
         }
