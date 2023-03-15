@@ -219,7 +219,7 @@
       "title": "The Rockies",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/the-rockies/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/the-rockies/regular/small.jpg",
           "medium": "./assets/thumbnails/the-rockies/regular/medium.jpg",
           "large": "./assets/thumbnails/the-rockies/regular/large.jpg"
         }
@@ -234,7 +234,7 @@
       "title": "Relentless",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/relentless/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/relentless/regular/small.jpg",
           "medium": "./assets/thumbnails/relentless/regular/medium.jpg",
           "large": "./assets/thumbnails/relentless/regular/large.jpg"
         }
@@ -249,7 +249,7 @@
       "title": "Community of Ours",
       "thumbnail": {
         "regular": {
-          "small": "./assets/thumbnails/community-of-ours/regular/small.jpg",
+          "small": "https://raw.githubusercontent.com/giandefaria/entertainment-web-app/master/src/assets/thumbnails/community-of-ours/regular/small.jpg",
           "medium": "./assets/thumbnails/community-of-ours/regular/medium.jpg",
           "large": "./assets/thumbnails/community-of-ours/regular/large.jpg"
         }
