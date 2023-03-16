@@ -43,14 +43,12 @@ function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
 }
 
 
-
 //função que adiciona a lista no html da página
 function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
     htmlElement.innerHTML= "";
     
     objFiltrado.forEach((element: moviesInformation) => {
         const thumbnail = (element.thumbnail.regular.small);
-        console.log(thumbnail)
         htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail);
     });
 }
