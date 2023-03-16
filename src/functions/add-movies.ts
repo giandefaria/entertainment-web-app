@@ -19,16 +19,8 @@ export default async function addMovies (elements: NodeListOf<HTMLElement>) {
 function verifyCategoryAndAddListOfMovies(obj: any, htmlElement: HTMLElement) {
     console.log(htmlElement.dataset.ul); //retorna se é trending ou not trending
     
-    if (htmlElement.dataset.ul == 'notTreding') {
-        const objFiltrado = obj.filter((movie: any) => {
-            return movie.isTrending == false;            
-           
-        });
-        console.log(objFiltrado) 
-        addMovieListInHtml(objFiltrado, htmlElement);
-    }
 
-    if (htmlElement.dataset.ul == 'trending') {
+    if (htmlElement.dataset.ul == 'trending') { //filmes que estão entre os trending
         const objFiltrado = obj.filter((movie: any) => {
             return movie.isTrending == true;            
            
@@ -36,8 +28,15 @@ function verifyCategoryAndAddListOfMovies(obj: any, htmlElement: HTMLElement) {
         console.log(objFiltrado) 
         addMovieListInHtml(objFiltrado, htmlElement);
     }
-    
 
+    if (htmlElement.dataset.ul == 'notTreding') { //filmes que não estao entre os trending
+        const objFiltrado = obj.filter((movie: any) => {
+            return movie.isTrending == false;            
+           
+        });
+        console.log(objFiltrado) 
+        addMovieListInHtml(objFiltrado, htmlElement);
+    }
     
     //console.log(objFiltrado);
     
