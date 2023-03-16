@@ -47,8 +47,8 @@ function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
 function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
     htmlElement.innerHTML= "";
     
-    objFiltrado.forEach((element: moviesInformation) => {
-        const thumbnail = (element.thumbnail.regular.small);
+    objFiltrado.forEach((obj: moviesInformation) => {
+        const thumbnail = (obj.thumbnail.regular.small); //capturo link da thumb para enviar a função movieList
         htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail);
     });
 }
