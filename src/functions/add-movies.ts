@@ -9,29 +9,36 @@ export default async function addMovies (elements: NodeListOf<HTMLElement>) {
     console.log(obj);
 
     elements.forEach( (htmlElement: HTMLElement) =>  {
-        console.log(htmlElement.dataset.ul);
-
-        if (htmlElement.dataset.ul == 'notTreding') {
-            notTrendingMovie(obj, htmlElement);                      
-        }
-        /*if (htmlElement.dataset.ul == 'trending') {
-            //notTrendingMovie(obj, htmlElement);                      
-        }*/
+        verifyCategoryAndAddListOfMovies(obj, htmlElement);
 
     })
 
 }
 
 //função que filtra os itens do objeto em que o trending seja falso
-function notTrendingMovie(obj: any, htmlElement: HTMLElement) {
-    console.log(htmlElement.dataset.ul);
+function verifyCategoryAndAddListOfMovies(obj: any, htmlElement: HTMLElement) {
+    console.log(htmlElement.dataset.ul); //retorna se é trending ou not trending
     
-    const objFiltrado = obj.filter((movie: any) => {
-        return movie.isTrending == false;
-        
-    });
+    if (htmlElement.dataset.ul == 'notTreding') {
+        const objFiltrado = obj.filter((movie: any) => {
+            return movie.isTrending == false;            
+           
+        });
+        console.log(objFiltrado) 
+        addMovieListInHtml(objFiltrado, htmlElement);
+    }
 
-    addMovieListInHtml(objFiltrado, htmlElement);
+    if (htmlElement.dataset.ul == 'trending') {
+        const objFiltrado = obj.filter((movie: any) => {
+            return movie.isTrending == true;            
+           
+        });
+        console.log(objFiltrado) 
+        addMovieListInHtml(objFiltrado, htmlElement);
+    }
+    
+
+    
     //console.log(objFiltrado);
     
 }
