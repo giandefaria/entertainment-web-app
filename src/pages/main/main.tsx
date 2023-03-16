@@ -25,12 +25,12 @@ export default function Main () {
             </div>
 
             <h1>Trending</h1>
-            <ul data-trending-container data-ul="trending">
+            <ul data-trending-container data-ul="trending" className="trending">
 
             </ul>
 
             <h1>Recommended for you</h1>
-            <ul data-recommended-container data-ul="notTreding">
+            <ul data-recommended-container data-ul="notTreding" className="recommended">
                 
             {/*    <li className="movies-container">
                    <div className="thumb-container">

@@ -11,6 +11,11 @@
     color: #FFFFFF;
 }
 
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 ul {
     padding: 0;
     margin: 0;
