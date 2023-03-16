@@ -26,27 +26,23 @@ function verifyCategoryAndAddListOfMovies(obj: any, htmlElement: HTMLElement) {
     
 }
 
-function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
-    if (htmlElement.dataset.ul == 'notTreding') { //filmes que não estao entre os trending
-        const objFiltrado = obj.filter((movie: any) => {
-            return movie.isTrending == false;
-
-        });
-        console.log(objFiltrado);
-        addMovieListInHtml(objFiltrado, htmlElement);
-    }
-}
-
+//filmes que estão entre os trending
 function tredingMoviesList(htmlElement: HTMLElement, obj: any) {
     if (htmlElement.dataset.ul == 'trending') { //filmes que estão entre os trending
-        const objFiltrado = obj.filter((movie: any) => {
-            return movie.isTrending == true;
-
-        });
-        console.log(objFiltrado);
+        const objFiltrado = obj.filter((movie: any) => { return movie.isTrending == true; });
         addMovieListInHtml(objFiltrado, htmlElement);
     }
 }
+
+//filmes que não estao entre os trending
+function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
+    if (htmlElement.dataset.ul == 'notTreding') { 
+        const objFiltrado = obj.filter((movie: any) => { return movie.isTrending == false; });
+        addMovieListInHtml(objFiltrado, htmlElement);
+    }
+}
+
+
 
 //função que adiciona a lista no html da página
 function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
