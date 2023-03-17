@@ -13,6 +13,7 @@ aside, .side-bar-icons-container, .side-bar-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 96px;
 }
 
 .side-bar-icons-container {
