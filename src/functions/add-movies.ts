@@ -49,7 +49,8 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
     
     objFiltrado.forEach((obj: moviesInformation) => {
         const thumbnail = (obj.thumbnail.regular.small); //capturo link da thumb para enviar a função movieList
-        const title =(obj.title);
+        const title = (obj.title);
+        const year = (obj.year);
         htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail);
     });
 }
