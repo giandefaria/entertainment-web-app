@@ -35,7 +35,9 @@ ul {
     position: relative;
 }
 
-.thumb-container img {}
+.thumb-image {
+    width: 280px;
+}
 
 .bookmarked-icon {
     position: absolute;
