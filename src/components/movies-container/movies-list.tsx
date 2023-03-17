@@ -10,7 +10,7 @@ export default function movieList (thumbnail:any) {
     return (`
         <li class="movies-container">
             <div class="thumb-container">
-                <img src='${thumbnail}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
+                <img class="thumb-image" src='${thumbnail}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
             </div>
 
             <div class="category">

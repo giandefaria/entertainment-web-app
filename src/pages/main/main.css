@@ -35,6 +35,8 @@ ul {
     position: relative;
 }
 
+.thumb-container img {}
+
 .bookmarked-icon {
     position: absolute;
     right: 30px;
