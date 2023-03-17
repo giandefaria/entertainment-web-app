@@ -38,11 +38,12 @@ ul {
 .thumb-image {
     width: 280px;
     margin-right: 40px;
+    
 }
 
 .bookmarked-icon {
     position: absolute;
-    right: 30px;
+    right: 70px;
     top: 36px;
     padding: 6px 10px;
     border-radius: 22px;
