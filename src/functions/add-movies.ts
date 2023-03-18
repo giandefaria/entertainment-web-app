@@ -53,7 +53,8 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
         const thumbnail = obj.thumbnail.regular.small; //capturo link da thumb para enviar a função movieList
         const year = obj.year;
         const category = obj.category;
-        
+        const rating = obj.rating;
+
         htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail);
     });
 }
