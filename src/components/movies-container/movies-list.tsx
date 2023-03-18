@@ -3,7 +3,7 @@ import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
 
 
-export default function movieList (thumbnail:any) {
+export default function movieList (title:string, thumbnail:any, year:number, category:string, rating:string) {
 
     
 
