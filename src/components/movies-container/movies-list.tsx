@@ -3,7 +3,7 @@ import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
 
 
-export default function movieList (title:string, thumbnail:any, year:number, category:string, rating:string) {
+export default function movieList (thumbnail:any, year:number, category:string, rating:string, title:string) {
 
     
 
@@ -14,7 +14,7 @@ export default function movieList (title:string, thumbnail:any, year:number, cat
             </div>
 
             <div class="category">
-            <h6>2019</h6> <div class="list-style display-center"><img src='${iconMovie}' alt="icon-movie" /> <h6> Movie</h6></div> <h6 class="list-style">PG</h6>
+            <h6>${year}</h6> <div class="list-style display-center"><img src='${iconMovie}' alt="icon-movie" /> <h6> Movie</h6></div> <h6 class="list-style">PG</h6>
             </div>
             <h4>The Great Lands</h4> 
         </li>

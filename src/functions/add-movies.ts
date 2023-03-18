@@ -49,13 +49,14 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
     console.log(objFiltrado)
     
     objFiltrado.forEach((obj: moviesInformation) => {
-        const title = obj.title;
+        
         const thumbnail = obj.thumbnail.regular.small; //capturo link da thumb para enviar a função movieList
         const year = obj.year;
         const category = obj.category;
         const rating = obj.rating;
+        const title = obj.title;
 
-        htmlElement.innerHTML = htmlElement.innerHTML + movieList(title, thumbnail, year, category, rating);
+        htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title);
     });
 }
 
