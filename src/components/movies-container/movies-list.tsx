@@ -16,7 +16,7 @@ export default function movieList (thumbnail:any, year:number, category:string, 
             <div class="category">
             <h6>${year}</h6> <div class="list-style display-center"><img src='${iconMovie}' alt="icon-movie" /> <h6> ${category}</h6></div> <h6 class="list-style">${rating}</h6>
             </div>
-            <h4>The Great Lands</h4> 
+            <h4>${title}</h4> 
         </li>
 
 
