@@ -55,7 +55,7 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
         const category = obj.category;
         const rating = obj.rating;
 
-        htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail);
+        htmlElement.innerHTML = htmlElement.innerHTML + movieList(title, thumbnail, year, category, rating);
     });
 }
 
