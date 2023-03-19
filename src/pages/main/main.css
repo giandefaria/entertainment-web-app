@@ -35,6 +35,12 @@ ul {
     position: relative;
 }
 
+.thumb-image-trending {
+    width: 470px;
+    height: 230px;
+    margin-right: 40px;
+}
+
 .thumb-image {
     width: 280px;
     margin-right: 40px;
