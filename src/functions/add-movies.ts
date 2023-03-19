@@ -51,14 +51,9 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
     objFiltrado.forEach((obj: moviesInformation) => {
         let thumbnail;
 
-        if(dataset == 'trending') {
-
-        }
-        else {
-
-        thumbnail = obj.thumbnail.regular.small; //capturo link da thumb para enviar a função movieList
-        }
-
+        if(dataset == 'trending') { thumbnail = obj.thumbnail.regular.medium}
+        else {thumbnail = obj.thumbnail.regular.small} //capturo link da thumb para enviar a função movieList
+        
         const year = obj.year;
         const category = obj.category;
         const rating = obj.rating;
