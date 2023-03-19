@@ -30,7 +30,7 @@ function verifyCategoryAndAddListOfMovies(obj: any, htmlElement: HTMLElement) {
 function tredingMoviesList(htmlElement: HTMLElement, obj: any) {
     if (htmlElement.dataset.ul == 'trending') { //filmes que estão entre os trending
         const objFiltrado = obj.filter((movie: any) => { return movie.isTrending == true; });
-        addMovieListInHtml(objFiltrado, htmlElement);
+        addMovieListInHtml(objFiltrado, htmlElement, htmlElement.dataset.ul);
     }
 }
 
@@ -38,25 +38,34 @@ function tredingMoviesList(htmlElement: HTMLElement, obj: any) {
 function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
     if (htmlElement.dataset.ul == 'notTreding') { 
         const objFiltrado = obj.filter((movie: any) => { return movie.isTrending == false; });
-        addMovieListInHtml(objFiltrado, htmlElement);
+        addMovieListInHtml(objFiltrado, htmlElement, htmlElement.dataset.ul);
     }
 }
 
 
 //função que adiciona a lista no html da página
-function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement) {
+function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:any) {
     htmlElement.innerHTML= "";
     console.log(objFiltrado)
     
     objFiltrado.forEach((obj: moviesInformation) => {
-        
-        const thumbnail = obj.thumbnail.regular.small; //capturo link da thumb para enviar a função movieList
+        let thumbnail;
+
+        if(dataset == 'trending') {
+
+        }
+        else {
+
+        thumbnail = obj.thumbnail.regular.small; //capturo link da thumb para enviar a função movieList
+        }
+
         const year = obj.year;
         const category = obj.category;
         const rating = obj.rating;
         const title = obj.title;
 
         htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title);
+
     });
 }
 
