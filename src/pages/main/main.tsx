@@ -1,10 +1,5 @@
 import icon from "../../assets/icon-search.svg"
 import "./main.css"
-import { conectar } from "../../functions/api-connect"
-import thumb from "../../assets/thumbnails/the-great-lands/regular/small.jpg"
-import bookempy from "../../assets/icon-bookmark-empty.svg"
-import iconMovie from "../../assets/icon-category-movie.svg"
-import MovieList from "../../components/movies-container/movies-list"
 import { useEffect } from "react"
 import addMovies from "../../functions/add-movies"
 

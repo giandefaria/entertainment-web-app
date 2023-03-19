@@ -1,6 +1,6 @@
 //função que adicionará os filmes nos comentários
 
-import movieList from "../components/movies-container/movies-list";
+import {movieList} from "../components/movies-container/movies-list";
 import { moviesInformation } from "../interfaces/movies-information";
 import { conectar } from "./api-connect"; //função que conecta e retorna uma lista da api
 
