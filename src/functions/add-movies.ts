@@ -1,6 +1,6 @@
 //função que adicionará os filmes nos comentários
 
-import {movieList} from "../components/movies-container/movies-list";
+import {movieList, trendingList} from "../components/movies-container/movies-list";
 import { moviesInformation } from "../interfaces/movies-information";
 import { conectar } from "./api-connect"; //função que conecta e retorna uma lista da api
 
@@ -50,16 +50,23 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
     
     objFiltrado.forEach((obj: moviesInformation) => {
         let thumbnail;
-
-        if(dataset == 'trending') { thumbnail = obj.thumbnail.regular.medium}
-        else {thumbnail = obj.thumbnail.regular.small} //capturo link da thumb para enviar a função movieList
-        
         const year = obj.year;
         const category = obj.category;
         const rating = obj.rating;
         const title = obj.title;
 
-        htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title);
+        if(dataset == 'trending') { 
+            thumbnail = obj.thumbnail.regular.medium
+            htmlElement.innerHTML = htmlElement.innerHTML + trendingList(thumbnail, year, category, rating, title);
+        }
+        else {
+            thumbnail = obj.thumbnail.regular.small
+            htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title);
+        } //capturo link da thumb para enviar a função movieList
+        
+
+
+        
 
     });
 }
