@@ -1,11 +1,23 @@
 import icon from "../../assets/icon-search.svg"
 import "./main.css"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import addMovies from "../../functions/add-movies"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
 export default function Main () {
+
+    const [option, setOptions] = useState({})
+    const [sliderRef, slider] = useKeenSlider(option)
+    /*const [sliderRef, slider] = useKeenSlider<any>({
+      loop: true,
+      mode: "free",
+      slides: { origin: "auto", perView: 2.8, spacing: 10 },
+      range: {
+        min: -5,
+        max: 5,
+      },
+    })*/
 
     useEffect(() => {
         let ulContainers : NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
@@ -13,21 +25,22 @@ export default function Main () {
         //console.log(ulContainers);
         addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
         
-    
+        setTimeout(() => {
+          setOptions({
+            loop: true,
+            mode: "free",
+            slides: { origin: "auto", perView: 2.8, spacing: 10 },
+            range: {
+            min: -5,
+            max: 5,
+      }
+          })
+        }, 10)
 
     }, [])
     
     
-
-    const [ref] = useKeenSlider<any>({
-        loop: true,
-        mode: "free",
-        slides: { origin: "auto", perView: 2.8, spacing: 10 },
-        range: {
-          min: -5,
-          max: 5,
-        },
-      })
+    
 
 
 
@@ -38,7 +51,7 @@ export default function Main () {
             </div>
 
             <h1>Trending</h1>
-            <ul ref={ref} data-trending-container data-ul="trending" className="keen-slider">
+            <ul ref={sliderRef} data-trending-container data-ul="trending" className="keen-slider">
 
             </ul>
 
