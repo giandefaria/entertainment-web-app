@@ -7,7 +7,7 @@ import "keen-slider/keen-slider.min.css"
 
 export default function Main() {
 
-  const [option, setOptions] = useState({})
+  const [option, setOptions] = useState({}) //crio um useState para monitorar 
   const [sliderRef, slider] = useKeenSlider(option)
   /*const [sliderRef, slider] = useKeenSlider<any>({
     loop: true,
@@ -21,8 +21,6 @@ export default function Main() {
 
   useEffect(() => {
     let ulContainers: NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
-
-    //console.log(ulContainers);
     addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
 
     setTimeout(() => {

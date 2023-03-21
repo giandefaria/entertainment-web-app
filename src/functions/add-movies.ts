@@ -45,9 +45,9 @@ function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
 
 //função que adiciona a lista no html da página
 function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:any) {
-    htmlElement.innerHTML= "";
+    htmlElement.innerHTML= ""; //primeiro limpo o que tem dentro do html
     console.log(objFiltrado)
-    let slideNumber: number = 0;
+    let slideNumber: number = 0; //variável utilizada para numerar os filmes no slide
     
     objFiltrado.forEach((obj: moviesInformation) => {
         let thumbnail;
@@ -67,10 +67,7 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
             htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title);
         } //capturo link da thumb para enviar a função movieList
         
-
-
         
-
     });
 }
 
