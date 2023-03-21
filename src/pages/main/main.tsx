@@ -5,60 +5,58 @@ import addMovies from "../../functions/add-movies"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
-export default function Main () {
+export default function Main() {
 
-    const [option, setOptions] = useState({})
-    const [sliderRef, slider] = useKeenSlider(option)
-    /*const [sliderRef, slider] = useKeenSlider<any>({
-      loop: true,
-      mode: "free",
-      slides: { origin: "auto", perView: 2.8, spacing: 10 },
-      range: {
-        min: -5,
-        max: 5,
-      },
-    })*/
+  const [option, setOptions] = useState({})
+  const [sliderRef, slider] = useKeenSlider(option)
+  /*const [sliderRef, slider] = useKeenSlider<any>({
+    loop: true,
+    mode: "free",
+    slides: { origin: "auto", perView: 2.8, spacing: 10 },
+    range: {
+      min: -5,
+      max: 5,
+    },
+  })*/
 
-    useEffect(() => {
-        let ulContainers : NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
-        
-        //console.log(ulContainers);
-        addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
-        
-        setTimeout(() => {
-          setOptions({
-            loop: true,
-            mode: "free",
-            slides: { origin: "auto", perView: 2.8, spacing: 10 },
-            range: {
-            min: -5,
-            max: 5,
-      }
-          })
-        }, 10)
+  useEffect(() => {
+    let ulContainers: NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
 
-    }, [])
-    
-    
-    
+    //console.log(ulContainers);
+    addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
+
+    setTimeout(() => {
+      //adiciono as propriedades do slide só após a lista de fillmes 'trending' for criada, para evitar bug
+      setOptions({
+        loop: true,
+        mode: "free",
+        slides: { origin: "auto", perView: 2.8, spacing: 10 },
+        range: {
+          min: -5,
+          max: 5,
+        }
+      })
+    }, 600)
+
+  }, [])
 
 
 
-    return (
-        <main>
-            <div className="input-container">
-                <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input"/>
-            </div>
+  return (
+    <main>
+      <div className="input-container">
+        <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input" />
+      </div>
 
-            <h1>Trending</h1>
-            <ul ref={sliderRef} data-trending-container data-ul="trending" className="keen-slider">
+      <h1>Trending</h1>
+      <ul ref={sliderRef} data-trending-container data-ul="trending" className="keen-slider">
 
-            </ul>
+      </ul>
 
-            <h1>Recommended for you</h1>
-            <ul data-recommended-container data-ul="notTreding" className="recommended">
-                
-            {/*    <li className="movies-container">
+      <h1>Recommended for you</h1>
+      <ul data-recommended-container data-ul="notTreding" className="recommended">
+
+        {/*    <li className="movies-container">
                    <div className="thumb-container">
                         <img src={thumb} alt="thumb" /> <div className="bookmarked-icon"><img src={bookempy} alt="bookmarked-icon"/></div>
                    </div>
@@ -68,11 +66,11 @@ export default function Main () {
                    </div>
                    <h4>The Great Lands</h4> 
                 </li>
-            */}    
-            </ul>
-        </main>
+            */}
+      </ul>
+    </main>
 
-    )
+  )
 
 
 }
