@@ -5,12 +5,12 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
 
-export function trendingList (thumbnail:any, year:number, category:string, rating:string, title:string) {
+export function trendingList (slideNumber:number,thumbnail:any, year:number, category:string, rating:string, title:string) {
     
     
 
     return (`
-        <li class="movies-container">
+        <li class="movies-container keen-slider__slide number-slide${slideNumber}">
             <div class="thumb-container">
                 <img class="thumb-image-trending" src='${thumbnail}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
             </div>
