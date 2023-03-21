@@ -9,6 +9,7 @@ export default function Main () {
 
     useEffect(() => {
         let ulContainers : NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
+        
         //console.log(ulContainers);
         addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
         
@@ -16,6 +17,8 @@ export default function Main () {
 
     }, [])
     
+    
+
     const [ref] = useKeenSlider<any>({
         loop: true,
         mode: "free",
