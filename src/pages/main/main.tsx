@@ -11,18 +11,22 @@ export default function Main () {
         let ulContainers : NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
         //console.log(ulContainers);
         addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
-
+        
+    
 
     }, [])
-
+    
     const [ref] = useKeenSlider<any>({
         loop: true,
-        mode: "free-snap",
-        slides: {
-          perView: 3,
-          spacing: 15,
+        mode: "free",
+        slides: { origin: "auto", perView: 2.8, spacing: 10 },
+        range: {
+          min: -5,
+          max: 5,
         },
       })
+
+
 
     return (
         <main>
