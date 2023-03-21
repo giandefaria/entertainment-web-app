@@ -47,7 +47,7 @@ function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
 function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:any) {
     htmlElement.innerHTML= "";
     console.log(objFiltrado)
-    let slideNumber: number;
+    let slideNumber: number = 0;
     
     objFiltrado.forEach((obj: moviesInformation) => {
         let thumbnail;
@@ -57,7 +57,8 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
         const title = obj.title;
 
         if(dataset == 'trending') {
-            slideNumber = slideNumber + 1; 
+            slideNumber = slideNumber + 1;
+            console.log(slideNumber) 
             thumbnail = obj.thumbnail.regular.medium
             htmlElement.innerHTML = htmlElement.innerHTML + trendingList(slideNumber ,thumbnail, year, category, rating, title);
         }
