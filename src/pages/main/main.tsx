@@ -2,8 +2,8 @@ import icon from "../../assets/icon-search.svg"
 import "./main.css"
 import { useEffect } from "react"
 import addMovies from "../../functions/add-movies"
-import 'keen-slider/keen-slider.min.css'
-import KeenSlider from 'keen-slider'
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 export default function Main () {
 
@@ -15,6 +15,15 @@ export default function Main () {
 
     }, [])
 
+    const [ref] = useKeenSlider<any>({
+        loop: true,
+        mode: "free-snap",
+        slides: {
+          perView: 3,
+          spacing: 15,
+        },
+      })
+
     return (
         <main>
             <div className="input-container">
@@ -22,7 +31,7 @@ export default function Main () {
             </div>
 
             <h1>Trending</h1>
-            <ul data-trending-container data-ul="trending" className="trending">
+            <ul ref={ref} data-trending-container data-ul="trending" className="trending">
 
             </ul>
 

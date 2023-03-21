@@ -6,7 +6,7 @@ import "keen-slider/keen-slider.min.css"
 
 
 export function trendingList (thumbnail:any, year:number, category:string, rating:string, title:string) {
-
+    
     
 
     return (`
