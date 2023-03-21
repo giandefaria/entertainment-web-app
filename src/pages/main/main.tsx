@@ -2,6 +2,8 @@ import icon from "../../assets/icon-search.svg"
 import "./main.css"
 import { useEffect } from "react"
 import addMovies from "../../functions/add-movies"
+import 'keen-slider/keen-slider.min.css'
+import KeenSlider from 'keen-slider'
 
 export default function Main () {
 

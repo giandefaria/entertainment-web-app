@@ -1,6 +1,8 @@
 //componente que cria o container do filme
 import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 
 export function trendingList (thumbnail:any, year:number, category:string, rating:string, title:string) {
