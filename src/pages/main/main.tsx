@@ -31,7 +31,7 @@ export default function Main () {
             </div>
 
             <h1>Trending</h1>
-            <ul ref={ref} data-trending-container data-ul="trending" className="trending">
+            <ul ref={ref} data-trending-container data-ul="trending" className="trending keen-slider">
 
             </ul>
 
