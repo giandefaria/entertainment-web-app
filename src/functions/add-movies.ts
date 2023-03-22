@@ -59,7 +59,7 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
         if(dataset == 'trending') {
             slideNumber = slideNumber + 1;
             console.log(slideNumber) 
-            thumbnail = obj.thumbnail.regular.medium
+            thumbnail = obj.thumbnail.regular.large
             htmlElement.innerHTML = htmlElement.innerHTML + trendingList(slideNumber ,thumbnail, year, category, rating, title);
         }
         else {
