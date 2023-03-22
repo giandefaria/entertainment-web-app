@@ -47,9 +47,9 @@ ul {
     
 }
 
-.container-inner--image {
+.container--inner--image {
     position: absolute;
-    bottom: 66px;
+    bottom: -9px;
     left: 20px;
 }
 
