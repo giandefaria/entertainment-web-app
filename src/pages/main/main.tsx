@@ -28,7 +28,7 @@ export default function Main() {
       setOptions({
         loop: true,
         mode: "free",
-        slides: { origin: "auto", perView: 2.8, spacing: 10 },
+        slides: { origin: "auto", perView: 2.85, spacing: 10 },
         range: {
           min: -5,
           max: 5,
