@@ -39,6 +39,7 @@ ul {
     width: 470px;
     height: 230px;
     /*margin-right: 40px;*/
+    border-radius: 8px;
 }
 
 .thumb-image {
