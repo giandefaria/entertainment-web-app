@@ -3,14 +3,14 @@ import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
 
 
-export function trendingList (slideNumber:number,thumbnail:any, year:number, category:string, rating:string, title:string, iconMovie:any) {
+export function trendingList (slideNumber:number,thumbnail:any, year:number, category:string, rating:string, title:string, bookmark:any) {
     
     
 
     return (`
         <li class="movies-container keen-slider__slide number-slide${slideNumber}">
             <div class="thumb-container">
-                <img class="thumb-image-trending" src='${thumbnail}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
+                <img class="thumb-image-trending" src='${thumbnail}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookmark}' alt="bookmarked-icon"/></div>
             </div>
 
             <div class="container--inner--image">
