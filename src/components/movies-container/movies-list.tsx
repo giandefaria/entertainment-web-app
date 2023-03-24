@@ -1,5 +1,5 @@
 //componente que cria o container do filme
-import bookempy from "../../assets/icon-bookmark-empty.svg"
+//import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
 
 
@@ -27,14 +27,14 @@ export function trendingList (slideNumber:number,thumbnail:any, year:number, cat
 
 }
 
-export function movieList (thumbnail:any, year:number, category:string, rating:string, title:string) {
+export function movieList (thumbnail:any, year:number, category:string, rating:string, title:string, bookmark:any) {
 
     
 
     return (`
         <li class="movies-container">
             <div class="thumb-container">
-                <img class="thumb-image" src='${thumbnail}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookempy}' alt="bookmarked-icon"/></div>
+                <img class="thumb-image" src='${thumbnail}' alt="thumb" /> <div class="bookmarked-icon"><img src='${bookmark}' alt="bookmarked-icon"/></div>
             </div>
 
             <div class="category">

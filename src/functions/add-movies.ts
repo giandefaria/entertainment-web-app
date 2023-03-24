@@ -69,7 +69,7 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
         }
         else {
             thumbnail = obj.thumbnail.regular.small
-            htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title);
+            htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title, bookmarkIcon);
         } //capturo link da thumb para enviar a função movieList
         
         
