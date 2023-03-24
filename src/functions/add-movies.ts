@@ -1,4 +1,4 @@
-//função que adicionará os filmes nos comentários
+//função que adicionará os filmes nas respectivas seções
 
 import {movieList, trendingList} from "../components/movies-container/movies-list";
 import { moviesInformation } from "../interfaces/movies-information";
@@ -52,18 +52,16 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
     let slideNumber: number = 0; //variável utilizada para numerar os filmes no slide
     
     objFiltrado.forEach((obj: moviesInformation) => {
-        console.log(obj)
         let bookmarkIcon = obj.isBookmarked == true ? bookFull : bookEmpty; //se for true, sera icone bookfull, do contrario bookempty
-        let thumbnail; 
+        let thumbnail; //se for da seção trending, será um thumbnail maior
         const year = obj.year;
         const category = obj.category;
         const rating = obj.rating;
         const title = obj.title;
 
-
+        //se o elemento for a seção trending
         if(dataset == 'trending') {
             slideNumber = slideNumber + 1;
-            console.log(slideNumber) 
             thumbnail = obj.thumbnail.regular.large
             htmlElement.innerHTML = htmlElement.innerHTML + trendingList(slideNumber ,thumbnail, year, category, rating, title, bookmarkIcon);
         }

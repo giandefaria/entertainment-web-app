@@ -1,5 +1,4 @@
-//componente que cria o container do filme
-//import bookempy from "../../assets/icon-bookmark-empty.svg"
+//componente que cria o container do filme, a depender da seção que se encontra o filme
 import iconMovie from "../../assets/icon-category-movie.svg"
 
 
