@@ -3,6 +3,7 @@
 import {movieList, trendingList} from "../components/movies-container/movies-list";
 import { moviesInformation } from "../interfaces/movies-information";
 import { conectar } from "./api-connect"; //função que conecta e retorna uma lista da api
+import iconMovie from "../../assets/icon-category-movie.svg"
 
 export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) {
     const obj = await conectar(); //atribuo o retorno ao obj
@@ -50,6 +51,7 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
     let slideNumber: number = 0; //variável utilizada para numerar os filmes no slide
     
     objFiltrado.forEach((obj: moviesInformation) => {
+        console.log(obj)
         let thumbnail;
         const year = obj.year;
         const category = obj.category;
@@ -60,7 +62,7 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
             slideNumber = slideNumber + 1;
             console.log(slideNumber) 
             thumbnail = obj.thumbnail.regular.large
-            htmlElement.innerHTML = htmlElement.innerHTML + trendingList(slideNumber ,thumbnail, year, category, rating, title);
+            htmlElement.innerHTML = htmlElement.innerHTML + trendingList(slideNumber ,thumbnail, year, category, rating, title, iconMovie);
         }
         else {
             thumbnail = obj.thumbnail.regular.small
