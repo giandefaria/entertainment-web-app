@@ -45,6 +45,7 @@ ul {
 .thumb-image {
     width: 280px;
     margin-right: 40px;
+    border-radius: 8px;
     
 }
 
