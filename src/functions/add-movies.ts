@@ -3,7 +3,7 @@
 import {movieList, trendingList} from "../components/movies-container/movies-list";
 import { moviesInformation } from "../interfaces/movies-information";
 import { conectar } from "./api-connect"; //função que conecta e retorna uma lista da api
-import iconMovie from "../../assets/icon-category-movie.svg"
+import iconMovie from "../assets/icon-category-movie.svg"
 
 export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) {
     const obj = await conectar(); //atribuo o retorno ao obj

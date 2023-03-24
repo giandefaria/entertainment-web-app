@@ -3,7 +3,7 @@ import bookempy from "../../assets/icon-bookmark-empty.svg"
 import iconMovie from "../../assets/icon-category-movie.svg"
 
 
-export function trendingList (slideNumber:number,thumbnail:any, year:number, category:string, rating:string, title:string) {
+export function trendingList (slideNumber:number,thumbnail:any, year:number, category:string, rating:string, title:string, iconMovie:any) {
     
     
 
