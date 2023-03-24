@@ -3,7 +3,7 @@
 import {movieList, trendingList} from "../components/movies-container/movies-list";
 import { moviesInformation } from "../interfaces/movies-information";
 import { conectar } from "./api-connect"; //função que conecta e retorna uma lista da api
-import iconMovie from "../assets/icon-category-movie.svg"
+import bookempy from "../assets/icon-bookmark-empty.svg"
 
 export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) {
     const obj = await conectar(); //atribuo o retorno ao obj
@@ -52,11 +52,13 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
     
     objFiltrado.forEach((obj: moviesInformation) => {
         console.log(obj)
-        let thumbnail;
+        let bookmarkIcon; //variável bookmark
+        let thumbnail = obj.isBookmarked == true ? iconMovie : 
         const year = obj.year;
         const category = obj.category;
         const rating = obj.rating;
         const title = obj.title;
+
 
         if(dataset == 'trending') {
             slideNumber = slideNumber + 1;
