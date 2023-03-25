@@ -17,6 +17,10 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 
 }
 
+function searchListener() {
+    
+}
+
 //função que verificará a nodeList e adicionará o respectivo filme
 function verifyCategoryAndAddListOfMovies(obj: any, htmlElement: HTMLElement) {
     console.log(htmlElement.dataset.ul); //retorna se é trending ou not trending
