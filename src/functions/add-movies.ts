@@ -18,7 +18,7 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 }
 
 function searchListener(htmlElement:HTMLElement) {
-    htmlElement.addEventListener
+    
 }
 
 //função que verificará a nodeList e adicionará o respectivo filme

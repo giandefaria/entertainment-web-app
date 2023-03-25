@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import addMovies from "../../functions/add-movies"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import { buscaVideo } from "../../functions/api-connect"
 
 export default function Main() {
 
@@ -20,7 +21,8 @@ export default function Main() {
   })*/
 
   useEffect(() => {
-    let searchInput: HTMLInputElement | null = document.querySelector('.search-input');
+    let searchInput: HTMLInputElement | any = document.querySelector('.search-input');
+    searchInput?.addEventListener('keyup', (evento:any) => buscaVideo(evento, searchInput.value) )
     console.log(searchInput);
 
     let ulContainers: NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
