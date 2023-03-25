@@ -17,7 +17,7 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 
 }
 
-function searchListener() {
+function searchListener(htmlElement:HTMLElement) {
     
 }
 

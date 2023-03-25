@@ -20,8 +20,12 @@ export default function Main() {
   })*/
 
   useEffect(() => {
+    let searchInput: HTMLInputElement | null = document.querySelector('.search-input');
+    console.log(searchInput);
+
     let ulContainers: NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
     addMovies(ulContainers); //função que adiciona cada container de filme no html. Envio nodeList dos elementos ul
+    
 
     setTimeout(() => {
       //adiciono as propriedades do slide só após a lista de fillmes 'trending' for criada, para evitar bug
