@@ -11,6 +11,13 @@ export async function conectar() {
     return respostaConvertida;
 }
 
+export async function buscaVideo(termoDeBusca:string) {
+    const resposta = await fetch(`http://localhost:3333/movies?q=${termoDeBusca}`); //conecto a api e busco os vídeos que contenham o termoDeBusca
+    //console.log(resposta);
+    const respostaConvertida = await resposta.json(); //converto a resposta em string em um objeto json
+    //console.log(respostaConvertida);
 
+    return respostaConvertida;
+}
 
 //criar um generics para o retorno da api
