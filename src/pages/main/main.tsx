@@ -54,6 +54,7 @@ export default function Main() {
       </div>
 
       <section className="search-container" style={{display: "none"}}>
+        <h1>Funcionando!</h1>
 
       </section>  
 
