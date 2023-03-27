@@ -52,12 +52,12 @@ export default function Main() {
       <div className="input-container">
         <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input" />
       </div>
-      
-      <section className="search-container">
+
+      <section className="search-container" style={{display: "none"}}>
 
       </section>  
 
-      <section className="main-container">
+      <section className="main-container" style={{display: "block"}}>
         <h1>Trending</h1>
         <ul ref={sliderRef} data-trending-container data-ul="trending" className="keen-slider">
 
