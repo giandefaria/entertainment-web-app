@@ -49,32 +49,35 @@ export default function Main() {
   return (
     <main>
       <section className="search-container">
-          
+
       </section>
-      <div className="input-container">
-        <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input" />
-      </div>
 
-      <h1>Trending</h1>
-      <ul ref={sliderRef} data-trending-container data-ul="trending" className="keen-slider">
+      <section className="main-container">
+        <div className="input-container">
+          <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input" />
+        </div>
 
-      </ul>
+        <h1>Trending</h1>
+        <ul ref={sliderRef} data-trending-container data-ul="trending" className="keen-slider">
 
-      <h1>Recommended for you</h1>
-      <ul data-recommended-container data-ul="notTreding" className="recommended">
+        </ul>
 
-        {/*    <li className="movies-container">
-                   <div className="thumb-container">
-                        <img src={thumb} alt="thumb" /> <div className="bookmarked-icon"><img src={bookempy} alt="bookmarked-icon"/></div>
-                   </div>
+        <h1>Recommended for you</h1>
+        <ul data-recommended-container data-ul="notTreding" className="recommended">
 
-                   <div className="category">
-                     <h6>2019</h6> <div className="list-style display-center"><img src={iconMovie} alt="icon-movie" /> <h6> Movie</h6></div> <h6 className="list-style">PG</h6>
-                   </div>
-                   <h4>The Great Lands</h4> 
-                </li>
-            */}
-      </ul>
+          {/*    <li className="movies-container">
+                    <div className="thumb-container">
+                          <img src={thumb} alt="thumb" /> <div className="bookmarked-icon"><img src={bookempy} alt="bookmarked-icon"/></div>
+                    </div>
+
+                    <div className="category">
+                      <h6>2019</h6> <div className="list-style display-center"><img src={iconMovie} alt="icon-movie" /> <h6> Movie</h6></div> <h6 className="list-style">PG</h6>
+                    </div>
+                    <h4>The Great Lands</h4> 
+                  </li>
+              */}
+        </ul>
+      </section>
     </main>
 
   )
