@@ -17,8 +17,9 @@ export async function buscaVideo(evento:any , termoDeBusca: any) {
     //console.log(resposta);
     const respostaConvertida = await resposta.json(); //converto a resposta em string em um objeto json
     console.log(respostaConvertida);
-    const section = document.querySelector(".search-container") as HTMLElement;
-    section.style.display = "block";
+    const section = document.querySelector(".search-container") as HTMLElement; //seleciono a section de pesquisa
+    section.style.display = "block"; //altero o display para block para aparecer na tela
+    
     return respostaConvertida;
 }
 
