@@ -48,15 +48,16 @@ export default function Main() {
 
   return (
     <main>
+     
+      <div className="input-container">
+        <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input" />
+      </div>
+      
       <section className="search-container">
 
-      </section>
+      </section>  
 
       <section className="main-container">
-        <div className="input-container">
-          <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input" />
-        </div>
-
         <h1>Trending</h1>
         <ul ref={sliderRef} data-trending-container data-ul="trending" className="keen-slider">
 
