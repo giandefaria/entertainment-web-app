@@ -21,8 +21,8 @@ export default function Main() {
   })*/
 
   useEffect(() => {
-    let searchInput: HTMLInputElement | any = document.querySelector('.search-input');
-    searchInput?.addEventListener('keyup', (evento:any) => buscaVideo(evento, searchInput.value) )
+    let searchInput: HTMLInputElement | any = document.querySelector('.search-input'); //capturo o input
+    searchInput?.addEventListener('keyup', (evento:any) => buscaVideo(evento, searchInput.value) ) //adiciono eventlistener
     console.log(searchInput);
 
     let ulContainers: NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
@@ -48,6 +48,9 @@ export default function Main() {
 
   return (
     <main>
+      <section className="search-container">
+          
+      </section>
       <div className="input-container">
         <img src={icon} alt="icon-search" /><input type="text" placeholder="Search for movies or TV series" className="search-input" />
       </div>
