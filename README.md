@@ -2,6 +2,8 @@ Executando o programa
 
 1) npm install
 2) npm run server
+3) npm start
+
 
 
 # Frontend Mentor - Entertainment web app
