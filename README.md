@@ -1,3 +1,9 @@
+Executando o programa
+
+1) npm install
+2) npx json-server --watch db.json
+
+
 # Frontend Mentor - Entertainment web app
 
 ![Design preview for the Entertainment web app coding challenge](./preview.jpg)
