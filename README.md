@@ -1,7 +1,7 @@
 Executando o programa
 
 1) npm install
-2) npx json-server --watch db.json
+2) npm run server
 
 
 # Frontend Mentor - Entertainment web app
