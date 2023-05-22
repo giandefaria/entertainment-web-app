@@ -22,7 +22,10 @@ export default function Main() {
 
   useEffect(() => {
     let searchInput: HTMLInputElement | any = document.querySelector('.search-input'); //capturo o input
-    searchInput?.addEventListener('keyup', (evento:any) => buscaVideo(evento, searchInput.value) ) //adiciono eventlistener
+    searchInput?.addEventListener('keyup', (evento:any) => {
+      console.log(searchInput);  
+      buscaVideo(evento, searchInput.value)
+    } ); //adiciono eventlistener
     console.log(searchInput);
 
     let ulContainers: NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
