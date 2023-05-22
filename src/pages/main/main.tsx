@@ -27,9 +27,9 @@ export default function Main() {
       if(searchInput.value.length != 0){  
         buscaVideo(evento, searchInput.value);
       } else {
-        console.log("input vazio")
+        console.log("input vazio"); //aqui manipularei o display da página, se tiver vazio, será block, do contrário, none;
       }
-    } ); //adiciono eventlistener
+    }); //adiciono eventlistener
     console.log(searchInput);
 
     let ulContainers: NodeListOf<HTMLElement> = document.querySelectorAll('[data-ul]'); //seleciono todos os elementos ul
