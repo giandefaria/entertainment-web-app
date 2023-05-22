@@ -23,7 +23,7 @@ export default function Main() {
   useEffect(() => {
     let searchInput: HTMLInputElement | any = document.querySelector('.search-input'); //capturo o input
     searchInput?.addEventListener('keyup', (evento:any) => {
-      console.log(searchInput);  
+      console.log(searchInput.value.length);  
       buscaVideo(evento, searchInput.value)
     } ); //adiciono eventlistener
     console.log(searchInput);
