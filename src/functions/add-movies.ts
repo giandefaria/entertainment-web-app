@@ -25,6 +25,9 @@ function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElement) {
         const category = filme.category;
         const rating = filme.rating;
         const title = filme.title;
+
+        htmlElement.innerHTML = "";
+        htmlElement.innerHTML += movieList(thumbnail, year, category, rating, title, bookmarkIcon);
         
     });
 }
