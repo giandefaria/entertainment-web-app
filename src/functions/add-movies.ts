@@ -50,7 +50,7 @@ function notTredingMoviesList(htmlElement: HTMLElement, obj: any) {
 
 
 //função que adiciona a lista no html da página
-function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:any) {
+export function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:any) {
     htmlElement.innerHTML= ""; //primeiro limpo o que tem dentro do html
     console.log(objFiltrado)
     let slideNumber: number = 0; //variável utilizada para numerar os filmes no slide
