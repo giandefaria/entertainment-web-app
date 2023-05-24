@@ -19,6 +19,8 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 
 //função responsável por criar os elementos do campo de pesquisa
 export function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElement) {
+    
+    htmlElement.innerHTML = ""; //limpando o html antes de percorrer o array;
     objFiltrado.forEach( (filme: moviesInformation) => {
         let bookmarkIcon = filme.isBookmarked == true ? bookFull : bookEmpty; //se for true, sera icone bookfull, do contrario bookempty
         let thumbnail = filme.thumbnail.regular.small; //tamanho da thumb
@@ -27,7 +29,6 @@ export function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElemen
         const rating = filme.rating;
         const title = filme.title;
 
-        htmlElement.innerHTML = "";
         htmlElement.innerHTML += movieList(thumbnail, year, category, rating, title, bookmarkIcon);
         
     });
