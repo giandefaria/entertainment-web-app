@@ -17,8 +17,10 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 
 }
 
-function addSearchedMoviesInHtml(objFiltrado: moviesInformation, htmlElement:HTMLElement) {
-    
+function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElement) {
+    objFiltrado.forEach( (filme: moviesInformation) => {
+        
+    });
 }
 
 //função que verificará a nodeList e adicionará o respectivo filme
