@@ -19,6 +19,12 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 
 function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElement) {
     objFiltrado.forEach( (filme: moviesInformation) => {
+        let bookmarkIcon = filme.isBookmarked == true ? bookFull : bookEmpty; //se for true, sera icone bookfull, do contrario bookempty
+        let thumbnail; //se for da seção trending, será um thumbnail maior
+        const year = filme.year;
+        const category = filme.category;
+        const rating = filme.rating;
+        const title = filme.title;
         
     });
 }
