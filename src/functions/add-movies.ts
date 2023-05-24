@@ -17,7 +17,7 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 
 }
 
-function searchListener(objFiltrado: moviesInformation, htmlElement:HTMLElement) {
+function addSearchedMoviesInHtml(objFiltrado: moviesInformation, htmlElement:HTMLElement) {
     
 }
 
