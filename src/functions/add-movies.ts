@@ -20,7 +20,7 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElement) {
     objFiltrado.forEach( (filme: moviesInformation) => {
         let bookmarkIcon = filme.isBookmarked == true ? bookFull : bookEmpty; //se for true, sera icone bookfull, do contrario bookempty
-        let thumbnail; //se for da seção trending, será um thumbnail maior
+        let thumbnail = filme.thumbnail.regular.small; //tamanho da thumb
         const year = filme.year;
         const category = filme.category;
         const rating = filme.rating;
@@ -74,11 +74,11 @@ function addMovieListInHtml(objFiltrado: any, htmlElement: HTMLElement, dataset:
         //se o elemento for a seção trending
         if(dataset == 'trending') {
             slideNumber = slideNumber + 1;
-            thumbnail = obj.thumbnail.regular.large
+            thumbnail = obj.thumbnail.regular.large;
             htmlElement.innerHTML = htmlElement.innerHTML + trendingList(slideNumber ,thumbnail, year, category, rating, title, bookmarkIcon);
         }
         else {
-            thumbnail = obj.thumbnail.regular.small
+            thumbnail = obj.thumbnail.regular.small;
             htmlElement.innerHTML = htmlElement.innerHTML + movieList(thumbnail, year, category, rating, title, bookmarkIcon);
         } //capturo link da thumb para enviar a função movieList
         
