@@ -17,7 +17,8 @@ export default async function addMovies (NodeElements: NodeListOf<HTMLElement>) 
 
 }
 
-function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElement) {
+//função responsável por criar os elementos do campo de pesquisa
+export function addSearchedMoviesInHtml(objFiltrado: any, htmlElement:HTMLElement) {
     objFiltrado.forEach( (filme: moviesInformation) => {
         let bookmarkIcon = filme.isBookmarked == true ? bookFull : bookEmpty; //se for true, sera icone bookfull, do contrario bookempty
         let thumbnail = filme.thumbnail.regular.small; //tamanho da thumb
