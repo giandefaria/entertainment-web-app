@@ -1,6 +1,7 @@
 //função que realiza a conexão com a api retornando o objeto
 
 import { moviesInformation } from "../interfaces/movies-information";
+import { addSearchedMoviesInHtml } from "./add-movies";
 
 export async function conectar() {
     const resposta = await fetch('http://localhost:3333/movies'); //conecto a api e a resposta eu atribuo a const resposta
@@ -19,6 +20,7 @@ export async function buscaVideo(evento:any , termoDeBusca: any) {
     console.log(respostaConvertida);
     const section = document.querySelector(".search-container") as HTMLElement; //seleciono a section de pesquisa
     section.style.display = "block"; //altero o display para block para aparecer na tela
+    addSearchedMoviesInHtml(respostaConvertida, section);
     
     return respostaConvertida;
 }
