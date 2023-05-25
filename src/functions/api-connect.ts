@@ -20,7 +20,8 @@ export async function buscaVideo(evento:any , termoDeBusca: any) {
     console.log(respostaConvertida);
     const section = document.querySelector(".search-container") as HTMLElement; //seleciono a section de pesquisa
     section.style.display = "block"; //altero o display para block para aparecer na tela
-    addSearchedMoviesInHtml(respostaConvertida, section);
+    const htmlContainer = document.querySelector("[data-result-container]") as HTMLElement;
+    addSearchedMoviesInHtml(respostaConvertida, htmlContainer);
     
     return respostaConvertida;
 }
