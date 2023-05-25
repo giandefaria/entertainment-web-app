@@ -62,6 +62,9 @@ export default function Main() {
 
       <section className="search-container" style={{display: "none"}}>
         <h1>Funcionando!</h1>
+        <ul data-result-container className="recommended">
+
+        </ul>
 
       </section>  
 
