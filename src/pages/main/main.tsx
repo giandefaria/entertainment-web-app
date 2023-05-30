@@ -28,6 +28,7 @@ export default function Main() {
         buscaVideo(evento, searchInput.value);
       } else {
         console.log("input vazio"); //aqui manipularei o display da página, se tiver vazio, será block, do contrário, none;
+        const searchContainer = document.querySelector('.search-container');
       }
     }); //adiciono eventlistener
     console.log(searchInput);
