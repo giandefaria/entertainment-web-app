@@ -12,15 +12,15 @@ export async function conectar() {
     return respostaConvertida;
 }
 
-export async function buscaVideo(evento:any , termoDeBusca: any) {
+export async function buscaVideo(evento:any , termoDeBusca: any, htmlContainer: any) {
     evento.preventDefault();
     const resposta = await fetch(`http://localhost:3333/movies?q=${termoDeBusca}`); //conecto a api e busco os vídeos que contenham o termoDeBusca
     //console.log(resposta);
     const respostaConvertida = await resposta.json(); //converto a resposta em string em um objeto json
     console.log(respostaConvertida);
-    const section = document.querySelector(".search-container") as HTMLElement; //seleciono a section de pesquisa
-    section.style.display = "block"; //altero o display para block para aparecer na tela
-    const htmlContainer = document.querySelector("[data-result-container]") as HTMLElement;
+    //const section = document.querySelector(".search-container") as HTMLElement; //seleciono a section de pesquisa
+    //section.style.display = "block"; //altero o display para block para aparecer na tela
+    //const htmlContainer = document.querySelector("[data-result-container]") as HTMLElement;
     addSearchedMoviesInHtml(respostaConvertida, htmlContainer);
     
     return respostaConvertida;

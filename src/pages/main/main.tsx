@@ -24,12 +24,18 @@ export default function Main() {
     let searchInput: HTMLInputElement | any = document.querySelector('.search-input'); //capturo o input
     searchInput?.addEventListener('keyup', (evento:any) => {
       console.log(searchInput.value.length);
+      const mainContainer = document.querySelector(".main-container") as HTMLElement;
+      const sectionContainer = document.querySelector(".search-container") as HTMLElement;
+      const innerSearchContainer = document.querySelector('[data-result-container]') as HTMLElement;
       if(searchInput.value.length != 0){  
-        buscaVideo(evento, searchInput.value);
+        buscaVideo(evento, searchInput.value, innerSearchContainer);    
+        mainContainer.style.display = "none";
+        sectionContainer.style.display = "block";
       } else {
-        console.log("input vazio"); //aqui manipularei o display da página, se tiver vazio, será block, do contrário, none;
-        const searchContainer = document.querySelector('[data-result-container]') as HTMLElement;
-        searchContainer.innerHTML = "";
+        console.log("input vazio"); //aqui manipularei o display da página, se tiver vazio, será block, do contrário, none;   
+        innerSearchContainer.innerHTML = "";
+        sectionContainer.style.display = "none";
+        mainContainer.style.display = "block";
       }
     }); //adiciono eventlistener
     console.log(searchInput);
